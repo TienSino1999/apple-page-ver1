@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+body {
+  overflow-x: hidden;
+}
+.parent {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  background-color: #ffffff;
+  font-family: "San Francisco";
+  grid-gap: 10px;
+}
+.element {
+  width: 100%;
+  min-height: 580px;
+  background-color: lightcoral;
+}
+.element:first-child,
+.element:nth-child(2),
+.element:nth-child(3) {
+  background-image: url(https://www.apple.com/v/home/en/images/heroes/iphone-11-pro/hero__dvsxv8smkkgi_large.jpg);
+  grid-column-start: 1;
+  grid-column-end: -1;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+.element:nth-child(2) {
+  background-image: url(https://www.apple.com/v/home/en/images/heroes/iphone-11/hero__dvsxv8smkkgi_large.jpg);
+}
+.element:nth-child(3) {
+  background-image: url(https://www.apple.com/v/home/en/images/heroes/watch-series-5/hero__dvsxv8smkkgi_large.jpg);
+}
+.element:nth-child(4),
+.element:nth-child(5),
+.element:nth-child(6),
+.element:nth-child(7),
+.element:nth-child(8),
+.element:nth-child(9) {
+  background-image: url(https://www.apple.com/v/home/en/images/promos/apple-watch-studio/tile__cauwwcyyn9hy_large.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  width: 50vw;
+}
+.element:nth-child(5) {
+  background-image: url(https://www.apple.com/v/home/en/images/promos/ipad/tile__cauwwcyyn9hy_large.jpg);
+}
+.element:nth-child(6) {
+  background-image: url(https://www.apple.com/v/home/en/images/promos/apple-card/tile__cauwwcyyn9hy_large.jpg);
+}
+.element:nth-child(7) {
+  background-image: url(https://www.apple.com/v/home/en/images/promos/fifth-ave-nso/tile__cauwwcyyn9hy_large.jpg);
+}
+.element:nth-child(8) {
+  background-image: url(https://www.apple.com/v/home/en/images/promos/apple-tv-plus/apple_tv_plus__euax5nw0l46e_large.jpg);
+}
+.element:nth-child(9) {
+  background-image: url(https://www.apple.com/v/home/en/images/promos/apple-arcade/apple_arcade__b476tw266342_large.jpg);
+}
+.unit-copy-wrapper {
+  width: 100vw;
+  min-height: 200px;
+  margin-top: 90px;
+  text-align: center;
+  color: #ffffff;
+}
+.headline {
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -0.28px;
+  animation-name: moveToLeft;
+  animation-duration: 2s;
+}
+.subhead {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 31px;
+  line-height: 31px;
+  letter-spacing: 0.216px;
+}
+.price {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  color: rgb(136, 136, 136);
+  letter-spacing: -0.374px;
+}
+.cta-links a {
+  display: inline-block;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  color: rgb(102, 187, 255);
+  letter-spacing: 0.231px;
+  background: #04345a;
+  padding: 12px 20px;
+  transition: opacity 1s ease-in;
+}
+.cta-links a:hover {
+  opacity: 0.7;
+}
+.head-02 {
+  color: rgb(17, 17, 17);
+}
+.wrapper-02 {
+  margin-top: 40px;
+}
+.logo-watch {
+  width: 100vw;
+  color: black;
+  font-weight: 600;
+  font-size: 21px;
+}
+.logo-watch .fab {
+  font-size: 40px;
+  color: black;
+}
+.unit-promos-wrapper {
+  text-align: center;
+  margin-top: 50px;
+}
+.promos-headline {
+  font-size: 40px;
+  color: rgb(17, 17, 17);
+  font-weight: 600;
+  line-height: 44px;
+}
+.promos-subhead {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 26px;
+  color: rgb(17, 17, 17);
+  letter-spacing: 0.336px;
+  margin-top: 20px;
+}
+.promos-cta-links a {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: rgb(0, 112, 201);
+  letter-spacing: -0.374px;
+  margin-top: 10px;
+}
+.promos-cta-links a {
+  display: inline-block;
+  margin-left: 20px;
+}
+.white-color {
+  color: #ffffff;
+}
+.tagline {
+  font-size: 17px;
+  margin-top: 13px;
+  letter-spacing: -0.374px;
+}
+.white-color a {
+  color: #ffffff;
+}
+.logo-tv {
+  color: #ffffff;
+  font-size: 35px;
+}
+.logo-tv .fab {
+  font-size: 40px;
+}
+.promos-cta-links {
+  margin-top: 10px;
+}
+.scroll-button {
+  width: 40px;
+  height: 40px;
+  /* background-color: lightcoral; */
+  position: fixed;
+  top: 95%;
+  right: 0%;
+  z-index: 20;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-button .fas {
+  font-size: 40px;
+  color: gray;
+}
+/* .element:nth-child(4),
+.element:nth-child(6),
+.element:nth-child(8) {
+  margin-left: 10px;
+}
+.element:nth-child(5),
+.element:nth-child(7),
+.element:nth-child(9) {
+  margin-right: 10px;
+} */
+
+@keyframes moveToLeft {
+  from {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 800px) {
+  .parent {
+    grid-template-columns: 100vw;
+  }
+  .element:nth-child(5),
+  .element:nth-child(4),
+  .element:nth-child(6),
+  .element:nth-child(7),
+  .element:nth-child(8),
+  .element:nth-child(9) {
+    width: 100vw;
+  }
+  .footer-directory {
+    flex-direction: column;
+  }
+  .footer-directory li {
+    /* display: none; */
+  }
+  .element-directory {
+    height: 10px;
+  }
+  .scroll-button {
+    display: none;
+  }
+}

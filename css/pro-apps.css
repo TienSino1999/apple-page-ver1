@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent::before {
+    content: '';
+    background-image: url(../img/macos/pro-apps/gallery_hw__eyuwadmsoui6_large.png);
+    background-repeat: no-repeat;
+    width: 625px;
+    height: 364px;
+    background-size: 625px 364px;
+    background-color: lightcoral;
+    display: inline-block;
+    position: relative;
+}
+.parent-container {
+    text-align: center;
+}
+.item-tab {
+    position: absolute;
+    width: 489px;
+    height: 313px;
+    background-color: lightblue;
+    top: 10px;
+    left: 32%;
+}

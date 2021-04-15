@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/slides-tv.css" />
+    <script src="https://kit.fontawesome.com/5c2f2f612d.js"></script>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="pre-next-button">
+        <div
+          class="dotnav-item"
+          onclick="showSlidesContainer(0), getSelected(0)"
+        ></div>
+        <div
+          class="dotnav-item"
+          onclick="showSlidesContainer(1), getSelected(1)"
+        ></div>
+        <div
+          class="dotnav-item"
+          onclick="showSlidesContainer(2), getSelected(2)"
+        ></div>
+        <div
+          class="dotnav-item"
+          onclick="showSlidesContainer(3), getSelected(3)"
+        ></div>
+        <div id="pre"><i class="fas fa-arrow-circle-left"></i></div>
+        <div id="next"><i class="fas fa-arrow-circle-right"></i></div>
+      </div>
+      <div class="button">
+        <div
+          class="item-button"
+          onclick="showSlides(0), showSlides2(0), showSlides3(0), showSlides4(0)"
+        >
+          <span class="tooltiptext">Black</span>
+        </div>
+        <div
+          class="item-button"
+          onclick="showSlides(1), showSlides2(1), showSlides3(1), showSlides4(1)"
+        >
+          <span class="tooltiptext">Green</span>
+        </div>
+        <div
+          class="item-button"
+          onclick="showSlides(2), showSlides2(2), showSlides3(2), showSlides4(2)"
+        >
+          <span class="tooltiptext">Red</span>
+        </div>
+        <div
+          class="item-button"
+          onclick="showSlides(3), showSlides2(3), showSlides3(3), showSlides4(3)"
+        >
+          <span class="tooltiptext">White</span>
+        </div>
+        <div
+          class="item-button"
+          onclick="showSlides(4), showSlides2(4), showSlides3(4), showSlides4(4)"
+        >
+          <span class="tooltiptext">Yellow</span>
+        </div>
+      </div>
+      <div class="slides-container">
+        <div class="image black-iporn"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+      </div>
+      <div class="slides-container sli-container-2">
+        <div class="image-2 black-iporn" onclick="showSlides2(0)"></div>
+        <div class="image-2" onclick="showSlides2(1)"></div>
+        <div class="image-2" onclick="showSlides2(2)"></div>
+        <div class="image-2" onclick="showSlides2(3)"></div>
+        <div class="image-2" onclick="showSlides2(4)"></div>
+        <!-- <div class="button">
+          <div class="item-button" onclick="showSlides(0)"></div>
+          <div class="item-button" onclick="showSlides(1)"></div>
+          <div class="item-button" onclick="showSlides(2)"></div>
+          <div class="item-button" onclick="showSlides(3)"></div>
+          <div class="item-button" onclick="showSlides(4)"></div>
+        </div> -->
+      </div>
+      <div class="slides-container">
+        <div class="image-3 black-iporn"></div>
+        <div class="image-3"></div>
+        <div class="image-3"></div>
+        <div class="image-3"></div>
+        <div class="image-3"></div>
+      </div>
+      <div class="slides-container">
+        <div class="image-4 black-iporn"></div>
+        <div class="image-4"></div>
+        <div class="image-4"></div>
+        <div class="image-4"></div>
+        <div class="image-4"></div>
+      </div>
+    </div>
+    <script>
+      var arrImg = document.getElementsByClassName("image");
+
+      function showSlides(index) {
+        for (i = 0; i < arrImg.length; i++) {
+          arrImg[i].style.opacity = "0";
+        }
+        arrImg[index].style.opacity = "1";
+      }
+
+      var arrItemDot = document.getElementsByClassName("dotnav-item");
+
+      function getSelected(index) {
+        for (i = 0; i < arrItemDot.length; i++) {
+          if (arrItemDot[i].className.includes("selected")) {
+            arrItemDot[i].classList.remove("selected");
+          }
+        }
+        arrItemDot[index].classList.add("selected");
+      }
+      // function makeSelected(index) {
+      //   for (i = 0; i < arrDotNav.length; i++) {
+      //     arrDotNav[i].className.remove('selected');
+      //   }
+      //   arrDotNav[index].className.push('selected');
+      // }
+
+      var arrImg2 = document.getElementsByClassName("image-2");
+
+      function showSlides2(index) {
+        for (i = 0; i < arrImg2.length; i++) {
+          arrImg2[i].style.opacity = "0";
+        }
+        arrImg2[index].style.opacity = "1";
+      }
+
+      var arrImg3 = document.getElementsByClassName("image-3");
+
+      function showSlides3(index) {
+        for (i = 0; i < arrImg3.length; i++) {
+          arrImg3[i].style.opacity = "0";
+        }
+        arrImg3[index].style.opacity = "1";
+      }
+
+      var arrImg4 = document.getElementsByClassName("image-4");
+
+      function showSlides4(index) {
+        for (i = 0; i < arrImg3.length; i++) {
+          arrImg4[i].style.opacity = "0";
+        }
+        arrImg4[index].style.opacity = "1";
+      }
+      
+      // var arrBlackIporn = document.getElementsByClassName('black-iporn');
+      // var indexSlide = 1;
+      // var preBtn = document.getElementById("pre");
+      // var nextBtn = document.getElementById("next");
+
+      // function showSlidesBlackIporn(index) {
+      //   if (indexSlide > arrBlackIporn.length) {
+      //     indexSlide = 1;
+      //     index = 1;
+      //   }
+
+      //   if (indexSlide < arrBlackIporn.length) {
+      //     indexSlide = arrBlackIporn.length;
+      //   }
+
+      //   for (i = 0; i < arrBlackIporn.length; i++) {
+      //     arrBlackIporn[i].style.display = 'none';
+      //   }
+      //   arrBlackIporn[indexSlide - 1].style.display = 'block';
+      // } 
+
+      // nextBtn.addEventListener('click', function() {
+      //   indexSlide++;
+      //   showSlidesBlackIporn(indexSlide);
+      // })
+      
+
+      var arrSliContainer = document.getElementsByClassName("slides-container");
+
+      function showSlidesContainer(index) {
+        for (i = 0; i < arrSliContainer.length; i++) {
+          arrSliContainer[i].style.display = "none";
+        }
+        arrSliContainer[index].style.display = "block";
+      }
+      showSlidesContainer(1);
+
+      var arrDotNav = document.getElementsByClassName("dotnav-item");
+
+      function preSlideShow(index) {
+        showSlides(index);
+        showSlides2(index);
+      }
+
+      preBtn.addEventListener("click", function() {
+        for (i = 0; i < 4; i++) {
+          preSlideShow(i);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  font-family: "San Francisco";
+  background-color: black;
+  position: relative;
+}
+nav {
+  position: fixed;
+  display: flex;
+  height: 60px;
+  background-color: gray;
+  width: 100vw;
+  z-index: 10;
+  transition: 0.4s ease-out;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 3.14286;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.apple-icon {
+  background-size: 16px 44px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 16px;
+  background-image: url(https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg);
+}
+.link-search,
+.link-bag {
+  background-image: url(http://www.apple.com/ac/globalnav/2.0/en_US/images/ac-globalnav/globalnav/search/image_large.svg);
+  width: 20px;
+  background-size: 20px 44px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.fab {
+  color: #ffffff;
+  font-size: 20px;
+}
+.link-search,
+.link-bag {
+  background-image: url(http://www.apple.com/ac/globalnav/2.0/en_US/images/ac-globalnav/globalnav/search/image_large.svg);
+  width: 20px;
+  background-size: 20px 44px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.link-bag {
+  background-size: 20px 43px;
+  background-image: url(http://www.apple.com/ac/globalnav/2.0/en_US/images/ac-globalnav/globalnav/bag/image_large.svg);
+}
+.chapterwrap-nav {
+  width: 100%;
+  background-color: #111113;
+  height: 100px;
+  animation-name: moveToLeft;
+  animation-duration: 1s;
+  position: absolute;
+  top: 55px;
+}
+.chapterwrap-items {
+  width: 60vw;
+  text-align: center;
+}
+.chapterwrap-item {
+  width: 36px;
+  height: 54px;
+  background-size: 36px 54px;
+  background-image: url(../img/wrapernav-item/iphone_11_pro_dark__cchxb3bv66vm_large.svg);
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  margin: 5px auto 7px;
+}
+.chapterwrap-label {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-family: "San Francisco";
+  display: block;
+  margin: 0;
+}
+.chapterwrap-new {
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.008em;
+  font-family: "San Francisco";
+  color: #bf4800;
+  display: block;
+  width: 100%;
+}
+.iphone-11 {
+  background-image: url(../img/wrapernav-item/iphone_11_dark__exagpxb8zh4y_large.svg);
+}
+.iphone-Xr {
+  background-image: url(../img/wrapernav-item/iphone_xr_dark__gmkx1gdvqqum_large.svg);
+}
+.iphone-8 {
+  background-image: url(../img/wrapernav-item/iphone_8_dark__d4f1b8j5cwia_large.svg);
+}
+.compare {
+  background-image: url(../img/wrapernav-item/iphone_comp_dark__ganfgd3pa9m6_large.svg);
+}
+.apple-card {
+  background-image: url(../img/wrapernav-item/iphone_apple_card_dark__fsk0oaya7eqi_large.svg);
+}
+.airpods {
+  background-image: url(../img/wrapernav-item/iphone_airpods_dark__b5yw8pv4m4z6_large.svg);
+}
+.accessories {
+  background-image: url(../img/wrapernav-item/iphone_acc_dark__b5fvf10sbhci_large.svg);
+}
+.ios-13 {
+  background-image: url(../img/wrapernav-item/iphone_ios_dark__bb9g9sts3q76_large.svg);
+}
+.scrolled {
+  /* opacity: 0.9; */
+  background-color: #323232;
+}
+@keyframes moveToLeft {
+  from {
+    transform: translateX(120px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+

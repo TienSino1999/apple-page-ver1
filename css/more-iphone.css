@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "San Francisco";
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+.parent {
+  padding: 30px 30px;
+  min-height: 200px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.element {
+  width: 100%;
+  min-height: 200px;
+}
+.large-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.hidden {
+  overflow: hidden;
+}
+.container-tv-plus {
+  width: 100%;
+  min-height: 200px;
+  background-color: #090e0a;
+}
+.padding-right {
+  padding-right: 15px;
+}
+.padding-left {
+  padding-left: 15px;
+}
+.padding-top {
+  padding-top: 15px;
+}
+.padding-bottom {
+  padding-bottom: 15px;
+}
+.image-tv-wrapper {
+  background-image: url(../img/more-iphone/apple_tv_plus_tile__f3ubduelvuqi_large.jpg);
+  background-repeat: no-repeat;
+  height: 350px;
+  background-position-y: bottom;
+}
+.content-tv-wrapper {
+  height: 250px;
+  background-color: #090e0a;
+  max-width: 400px;
+  text-align: center;
+  padding-top: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container-tv-plus .title-headline-image {
+  background-image: url(../img/more-iphone/apple_tv_plus_logo__elhpe3osiyky_large.png);
+  height: 50px;
+  width: 100px;
+  background-repeat: no-repeat;
+  background-size: 99px 36px;
+  display: inline-block;
+}
+.container-tv-plus {
+  position: relative;
+}
+p.typography-title-copy {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 29px;
+  color: white;
+}
+.large-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-arcade {
+  height: 600px;
+  width: 675px;
+  background-image: url(../img/more-iphone/arcade_background__yfdqjyo1smqq_large.jpg);
+  background-size: 675px 600px;
+  background-position-x: -48px;
+  background-repeat: no-repeat;
+}
+.section {
+  overflow: hidden;
+}
+.container-music {
+  background: -webkit-linear-gradient(115deg, #d253b1, #fb6f4a);
+  min-height: 600px;
+  position: relative;
+}
+.content-music-wrapper {
+  text-align: center;
+  padding-top: 75px;
+}
+.container-news {
+  width: 675px;
+  height: 600px;
+  background-image: url(../img/more-iphone/apple_news_plus_tile__esw1e1fhbh4y_large.jpg);
+  background-repeat: no-repeat;
+  background-size: 675px 600px;
+  background-position: -48px;
+}
+.container-card {
+  display: flex;
+  height: 360px;
+  background-color: #fafafa;
+}
+.large-7 {
+  flex-basis: 65%;
+  max-width: 65%;
+}
+.card-image-wrapper {
+  background-color: #fafafa;
+}
+.card-image {
+  background-image: url(../img/more-iphone/apple_card__eta2gejb8rgy_large.jpg);
+  height: 353px;
+  width: 808px;
+  background-size: 808px 353px;
+  background-repeat: no-repeat;
+}
+.secure-image-wrapper {
+  min-height: 200px;
+  display: flex;
+}
+.content-secure-wrapper {
+  min-height: 200px;
+  text-align: center;
+  padding-top: 50px;
+}
+.secure-image {
+  background-image: url(../img/more-iphone/thats_iphone__d4ojsfbp8paq_large.jpg);
+  height: 374px;
+  width: 440px;
+  background-size: 440px 374px;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.how-to-shoot-image {
+  background-image: url(../img/more-iphone/shot_on_iphone__fjwoocpis3e6_large.jpg);
+  min-height: 574px;
+  width: 627px;
+  background-size: 627px 574px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.container-secure {
+    background: black;
+}
+.content-shot-wrapper {
+  color: white;
+  max-width: 400px;
+  text-align: center;
+  padding-top: 80px;
+  display: inline-block;
+}

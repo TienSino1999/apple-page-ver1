@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+html {
+  scroll-behavior: smooth;
+}
+.footer-content {
+  font-family: "San Francisco";
+  max-width: 980px;
+  min-height: 400px;
+  margin: auto;
+}
+.footer-notes {
+  min-height: 100px;
+  background-color: #f5f5f7;
+  padding: 17px 0 10px;
+}
+.footer-notes p {
+  font-size: 12px;
+  color: rgb(134, 134, 139);
+  line-height: 16px;
+  letter-spacing: -0.12px;
+  font-weight: 400;
+}
+footer {
+  background-color: #f5f5f7;
+}
+.footer-directory {
+  display: flex;
+  width: 100%;
+  min-height: 400px;
+  font-size: 12px;
+  color: rgb(81, 81, 84);
+  line-height: 16px;
+}
+.element-directory {
+  width: 20%;
+  min-height: 400px;
+}
+.footer-directory ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.section-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: rgb(29, 29, 31);
+}
+.footer-directory li {
+  margin: 5px 0;
+}
+.copyright-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.copyright-element {
+  width: 33%;
+}
+.footer-shop {
+  font-size: 12px;
+}
+.copyright-element:nth-child(2) {
+  flex-basis: 600px;
+}
+.copyright-element:nth-child(3) {
+  flex-basis: 120px;
+}
+.footer-shop a {
+  font-size: 12px;
+  color: black;
+}
+.copyright-element a {
+  display: inline-block;
+  margin-left: 10px;
+}
+.copyright-section {
+  font-size: 12px;
+}
+.ac-gf-sosumi {
+  min-width: 980px;
+  background-color: #f5f5f7;
+  min-height: 200px;
+  border-bottom: 1px solid black;
+  padding-top: 50px;
+  padding-bottom: 9px;
+  font-family: "San Francisco";
+  font-size: 13px;
+  color: rgb(81, 81, 84);
+}
+.ac-gf-sosumi ul {
+  display: unset;
+}
+
+.ac-gf-sosumi li {
+  margin-bottom: 0.8em;
+}
+
+.ac-gf-sosumi ol {
+  list-style-position: outside;
+  padding: 0 17px;
+}
+
+.ac-gf-sosumi ol li {
+  list-style-type: decimal;
+}
+.ac-gf-ac-gf-breadcrumbs {
+  width: 100%;
+  min-height: 50px;
+  color: rgb(81, 81, 84);
+}
+.ac-gf-ac-gf-breadcrumbs a{
+  color: rgb(81, 81, 84);
+  text-decoration: none;
+}
+
